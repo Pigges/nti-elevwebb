@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-svg{
+    height: 100px;
+    margin-left: 20px;
+}
