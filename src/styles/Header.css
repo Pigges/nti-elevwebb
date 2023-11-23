@@ -8,3 +8,6 @@ header{
     height: 100px;
     margin-left: 20px;
 }
+.info-svg svg{
+    height: 100%;
+}
