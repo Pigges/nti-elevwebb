@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 import Header from '../components/Header.astro';
 interface Props {
 	title: string;
@@ -22,22 +23,3 @@ const { title } = Astro.props;
 		<main><slot /></main>
 	</body>
 </html>
-<style is:global>
-	@import 'bulma/css/bulma.css';
-
-	:root {
-		--gradient: linear-gradient(90deg, rgba(75,0,130,1) 0%, rgba(177,6,140,1) 100%);
-	}
-	
-	* {
-		margin: 0;
-	}
-
-	html {
-		font-family: system-ui, sans-serif;
-		background: var(--gradient);
-	}
-
-	body {
-	}
-</style>
