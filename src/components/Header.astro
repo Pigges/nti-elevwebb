@@ -1,37 +1,50 @@
 ---
-import "../styles/Header.css"
+import "../styles/Header.scss"
 ---
 <header>
-    <!-- <section class="navbar-brand left">
-        <img src="/favicon.png" alt="">
-    </section>
-    <section class="navbar-menu navbar-end right">    
-        <figure class="info-svg">
+  
+<script>
+  import "../scripts/Header.js"
+</script>
 
-        </figure>
-    </section>
-    <div class="navbar-burger">
-        <img src="/favicon.png" alt="">
-    </div> -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="/favicon.png" alt="">
+    </a>
 
-    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <img src="/favicon.png" alt="">
-        </div>
-    </nav> -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="/favicon.png" alt="">
-          </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        
-        <div class="navbar-menu"></div>
-      </nav>
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  
+  <div class="navbar-menu" id="navMenu">
+    <div class="navbar-start">
+      <div class="navbar-item">
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a href="#"><h1>Inlägg</h1></a>
+        <a href="#"><h1>Program</h1></a>
+        <a href="#"><h1>Kontakt</h1></a>
+        <a href="#"><h1>Om Oss</h1></a>
+        <a href="#"><h1>Login</h1></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  h1{
+    color: black;
+  }
+  .navbar-item{
+    gap: 20px;
+  }
+</style>
+
+
 </header>
