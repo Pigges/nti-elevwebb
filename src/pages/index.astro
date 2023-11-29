@@ -1,14 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Carousel from '../components/Carousel.astro';
 
 import '../styles/index.css';
 ---
 
 <Layout title="NTI Karlstad Elevwebb">
 	<section class="hero">
-		<div class="hero-body">
-			
+		<div class="hero-body tile is-vertical">
 			<h1>NTI Karlstad Elevwebb</h1>
-		</div>
+			<Carousel slides={[
+				{
+					src: 'https://media.discordapp.net/attachments/887596185211256832/1176499801882378270/wall_anime_8K.png?ex=656f17d3&is=655ca2d3&hm=7091c8343d5113caa7ddfab6433b8f9e25856cbc926a0569019da87209ef567b&=&format=webp&width=1193&height=671',
+					caption: "Hola"
+				},
+				{
+					src: 'https://media.discordapp.net/attachments/887596185211256832/1176499801882378270/wall_anime_8K.png?ex=656f17d3&is=655ca2d3&hm=7091c8343d5113caa7ddfab6433b8f9e25856cbc926a0569019da87209ef567b&=&format=webp&width=1193&height=671',
+					caption: "Hola"
+				}
+			]}/>
+			<a href="/feed" class="button is-link">Senaste Inlägg</a>
 	</section>
 </Layout>

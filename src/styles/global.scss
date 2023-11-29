@@ -1,5 +1,27 @@
-@import 'bulma/css/bulma.css';
 @import url(https://fonts.bunny.net/css?family=ubuntu:300,300i,400,400i,500,500i,700,700i);
+
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@import 'bulma/bulma.sass';
 
 * {
     font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -7,7 +29,7 @@
 
 :root {
     --gradient: linear-gradient(90deg, rgba(75,0,130,1) 0%, rgba(177,6,140,1) 100%);
-} */
+}
 
 * {
     margin: 0;

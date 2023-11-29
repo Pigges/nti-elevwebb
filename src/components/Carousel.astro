@@ -1,0 +1,39 @@
+---
+interface Props {
+	slides;
+}
+
+const { slides } = Astro.props;
+---
+
+<div class="slideshow-container">
+    {slides.map((slide: object, i: number) => (
+        <div class="mySlides fade">
+            <div class="numbertext">{i+1} / {slides.length}</div>
+            <img src={slide.src} style="width:100%">
+            <div class="text">{slide.caption}</div>
+        </div>
+    ))}
+
+    <!-- Next and previous buttons -->
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+			  <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        import {currentSlide, plusSlides} from '../scripts/carousel.js';
+    
+        document.querySelector('.prev').addEventListener('click', (e)=>{plusSlides(-1)});
+        document.querySelector('.next').addEventListener('click', (e)=>{plusSlides(1)});
+        
+        document.querySelector('#dot1').addEventListener('click', (e)=>{currentSlide(1)});
+        document.querySelector('#dot2').addEventListener('click', (e)=>{currentSlide(2)});
+        document.querySelector('#dot3').addEventListener('click', (e)=>{currentSlide(3)});
+    </script>
+</div>
