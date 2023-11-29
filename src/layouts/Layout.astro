@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import "../styles/global.scss";
 import Header from '../components/Header.astro';
 interface Props {
 	title: string;
@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="NTI Karlstad Elevwebb." />
