@@ -1,5 +1,7 @@
 ---
 import "../styles/Header.scss"
+
+import HeaderLink from "./HeaderLink.astro";
 ---
 <header>
   
@@ -27,20 +29,20 @@ import "../styles/Header.scss"
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
-        <div class="has-background-primary">
-          <a href="#"><h2 class="has-text-centered">Inlägg</h2></a>
+        <div class="">
+          <HeaderLink class="" href="/feed">Inlägg</HeaderLink>
         </div>
-        <div class="has-background-info">
-          <a href="/program"><h2 class="has-text-centered">Program</h2></a>
+        <div class="">
+          <HeaderLink href="/program">Program</HeaderLink>
         </div>
-        <div class="has-background-info">
-          <a href="#"><h2 class="has-text-centered">Kontakt</h2></a>
+        <div class="">
+          <HeaderLink href="/contact">Kontakt</HeaderLink>
         </div>
-        <div class="has-background-info">
-          <a href="#"><h2 class="has-text-centered">Om Oss</h2></a>
+        <div class="">
+          <HeaderLink href="/about">Om Oss</HeaderLink>
         </div>
-        <div class="has-background-info">
-          <a href="#"><h2 class="has-text-centered">Login</h2></a>
+        <div class="">
+          <HeaderLink href="/login">Login</HeaderLink>
         </div>
       </div>
     </div>

@@ -3,9 +3,64 @@ import Layout from '../layouts/Layout.astro';
 import Tiles from '../components/Tiles.astro'
 ---
 <Layout title='Program'>
-    <section>
-        <Tiles>
-            
-        </Tiles>
-    </section>
+
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical">
+            <div class="tile is-parent is-horizontal">
+                <div class="tile is-parent is-4 tile-margin">
+                    <div class="tile is-child box">
+                        <p>
+                            <a href="https://ntigymnasiet.se/karlstad/program/teknikprogrammet/informations-och-medieteknik/">Teknik</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="tile is-parent is-4 tile-margin">
+                    <div class="tile is-child box">
+                        <p>
+                            <a href="https://ntigymnasiet.se/karlstad/program/estetiska-programmet/estetik-och-media/">Musik</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="tile is-parent is-4 tile-margin">
+                    <div class="tile is-child box">
+                        <p>
+                            <a href="https://ntigymnasiet.se/karlstad/program/estetiska-programmet/musik/">Design & media</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent is-vertical tile-center tile-margin">
+                <div class="tile is-4 is-child box">
+                    <p>
+                        <a href="https://ntigymnasiet.se/karlstad/program/el-och-energiprogrammet/dator-och-kommunikationsteknik/">El</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </Layout>
+
+<style>
+    .is-ancestor{
+        margin: 0;
+        width: 100%;
+    }
+    .is-parent{
+        padding: 0;
+    }
+    .title{
+        color: black;
+    }
+    .tile-center{
+        align-items: center;
+    }
+    .tile-margin{
+        /* margin-top: 20px; */
+        padding: 10px;
+    }
+    p{
+        text-align: center;
+    }
+
+</style>
