@@ -1,26 +1,23 @@
 @import url(https://fonts.bunny.net/css?family=ubuntu:300,300i,400,400i,500,500i,700,700i);
 
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
+$magenta: #F3099F;
+$ultraviolet: #B1068C;
+$granite: #EBEBEB;
+$coal: #222222;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
+$link: $ultraviolet;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+// $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-$primary: purple;
+$primary: $magenta;
+$secondary: $granite;
 
 
 @import 'bulma/bulma.sass';
@@ -40,6 +37,16 @@ $primary: purple;
 html {
     font-family: system-ui, sans-serif;
     background: var(--gradient);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .is-transparent{
