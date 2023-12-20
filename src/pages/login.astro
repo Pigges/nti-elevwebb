@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title='Logga in'>
+    <div class="container mt-6 px-6">
+        <h1 class="is-size-1 has-text-centered has-text-weight-bold has-text-white">Logga In</h1>
+        <form class="box">
+            <div class="field">
+            <label class="label">E-post</label>
+            <div class="control">
+                <input class="input" type="email" placeholder="fornamn.efternamn@*.ntig.se">
+            </div>
+            </div>
+    
+            <div class="field">
+                <label class="label">Lösenord</label>
+                <div class="control">
+                    <input class="input" type="password" placeholder="********">
+                </div>
+            </div>
+    
+            <button class="button is-primary">Sign in</button>
+        </form>
+    </div>
+</Layout>
