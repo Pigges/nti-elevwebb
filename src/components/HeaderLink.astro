@@ -1,3 +1,6 @@
+<!-- Gives a header link an active class when the loaded page corresponds to that link
+    The active class puts a background color on the link highlighting it and making it clear what page/link one is on. -->
+
 ---
 export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
 
@@ -8,13 +11,14 @@ const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.split('/').slice(0,2).join('/');
 ---
 
-<a href={href} class:list={[className, isActive ? "has-background-primary" : "has-background-info", {  }]} {...props}>
+<a href={href} class:list={[className, isActive ? "has-background-primary" : {  }]} {...props}>
     <slot />
 </a>
 <style>
     a {
         display: inline-block;
         text-decoration: none;
+        border-radius: 5px;
     }
     a.active {
         font-weight: bolder;
