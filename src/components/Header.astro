@@ -1,3 +1,6 @@
+<!-- Code for the Header component -->
+
+<!-- Imports the scss style code and HeaderLink code. -->
 ---
 import "../styles/Header.scss"
 
@@ -10,11 +13,14 @@ import HeaderLink from "./HeaderLink.astro";
 </script>
 
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+
+  <!-- Code for the brand logo. -->
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <img src="/favicon.png" alt="">
     </a>
 
+    <!-- Code for the hamburger button. -->
     <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -22,12 +28,17 @@ import HeaderLink from "./HeaderLink.astro";
     </a>
   </div>
   
+  <!-- Code for the Header links. -->
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
       <div class="navbar-item">
       </div>
     </div>
     <div class="navbar-end">
+
+      <!-- The astro HeaderLink component is used in the following navbar items. The component highlights the link in the header 
+        corresponding to the page a user is currently on. -->
+
       <div class="navbar-item">
         <div class="">
           <HeaderLink class="" href="/feed">Inlägg</HeaderLink>
